@@ -7,17 +7,17 @@ class Rational(n: Int, d: Int) {
 
   def gcd(a: Int, b: Int): Int = if (b == 0) a else gcd(b, a % b)
 
-  def neg: Rational = new Rational(-numer, denom)
+  def neg: Rational2 = new Rational2(-numer, denom)
 
   override def toString: String = s"$numer/${denom.abs}"
 }
 
 object Rational {
-  def apply(n: Int, d: Int): Rational = new Rational(n, d)
+  def apply(n: Int, d: Int): Rational2 = new Rational2(n, d)
 }
 
-object Main extends App {
-  val x = Rational(5, 20)
+object Q1 extends App {
+  val x = Rational2(5, 20)
   val negX = x.neg
 
   println(s"x: $x")
