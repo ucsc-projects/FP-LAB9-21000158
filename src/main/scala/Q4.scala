@@ -19,6 +19,7 @@ class Account2(initialBalance: Double) {
       balance += balance * 0.05 // Deposit interest
     } else if (balance < 0) {
       balance += balance * 0.1 // Overdraft interest
+
     }
   }
 }
